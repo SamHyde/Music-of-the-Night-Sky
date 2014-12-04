@@ -6,7 +6,6 @@ var notes = [ 60, 62, 64, 65, 67, 69, 71];
 
 var const = [];
 
-
 var index = 0;
 var trigger = 0;
 var autoplay = false;
@@ -23,11 +22,7 @@ function setup(){
   osc.start();
   osc.amp(0);
 
-
-
-
-	// Creating a new Star object
-
+// Creating a new Star object
 
 }
 
@@ -46,9 +41,7 @@ function playNote(note, duration) {
   }
 }
 
-
 function draw(){
-
 
 // Draw a keyboard
 
@@ -99,9 +92,8 @@ myCanvas.size(windowWidth, windowHeight);
 	myCanvas.size(windowWidth, windowHeight);
 	}
 
-	//Create an array of dots here for the constellations
+//Create an array of dots here for the constellations
 
-	
 }
 
 function mousePressed() {
@@ -109,7 +101,6 @@ function mousePressed() {
 
   	// Drawing dot
 	b.display();
-
 
 }
 
