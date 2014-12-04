@@ -49,25 +49,30 @@ Each star will connect visually and audibly, creating an arpeggio. Clicking in a
 Assignments:
 
 VISUAL - Emilee
+=========
 Background star layers, random array sprays stars across screen
 Parallax effect based on mouseX and mouseY
 Animation/glow effect for hover and selected state
 
 VISUAL INTERACTION - Sam
+=========
 Forground star layers (larger dots) become hoverable and clickable
 Stars are connected by lines to connect the dots
 Click off of screen to clear connections
 
 SOUND - Scott
+=========
 Separate screen into sections (window height divided equally)
 Assign notes to sections of the screen
 Load sounds onto note sections
 
 SOUND INTERACTION - Ryan
+=========
 Assign dots to sound sections
 Get arpeggio to play loop
 Sound triggers when dot is hovered or clicked
 
 EXTRA - if we have time
+=========
 dat GUI timing slider
 
