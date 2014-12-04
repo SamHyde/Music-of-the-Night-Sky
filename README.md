@@ -1,9 +1,7 @@
-spacecode
+Music of the Night Sky
 =========
 
 Creative Coding Final
-
-Music of the Night Sky 
 
 The Concept: As we gaze into the night sky we often find ourselves connecting the points of light. We take these connections and usually turn them into pictorial representations of mythic animals or people. But what if there was another way which we could experience the patterns of stars. With this project we will transform a nights sky into a musical instrument allowing us to create the songs of the cosmos.      
 
