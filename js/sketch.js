@@ -1,7 +1,11 @@
 //WNM 498 Generative Art & Creative Code
 //Scott Brookshire, Sam Evans, Ryan Jones, Emilee Serafine
 
+
 var notes = [ 60, 62, 64, 65, 67, 69, 71];
+
+var const = [];
+
 
 var index = 0;
 var trigger = 0;
@@ -12,6 +16,7 @@ function setup(){
 //Create the canvas at window height and width
 	myCanvas = createCanvas(windowWidth, windowHeight);
 
+
 // A triangle oscillator
   osc = new p5.TriOsc();
   // Start silent
@@ -19,6 +24,9 @@ function setup(){
   osc.amp(0);
 
 
+
+
+	// Creating a new Star object
 
 
 }
@@ -40,6 +48,7 @@ function playNote(note, duration) {
 
 
 function draw(){
+
 
 // Draw a keyboard
 
@@ -83,4 +92,25 @@ window.onresize = function(){
 myCanvas.size(windowWidth, windowHeight);
 }
 	
+
+	// Window event handler when the browser window size changes
+	// When resized it calls the anonymous function
+	window.onresize = function(){
+	myCanvas.size(windowWidth, windowHeight);
+	}
+
+	//Create an array of dots here for the constellations
+
+	
+}
+
+function mousePressed() {
+  var b = new dot(mouseX,mouseY,10); 
+
+  	// Drawing dot
+	b.display();
+
+
+}
+
 
