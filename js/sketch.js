@@ -69,6 +69,7 @@ function draw(){
     tinyStars[i].move();
   }
 
+  stroke(255);
 
   // The width for each key
   var h = height / notes.length;
