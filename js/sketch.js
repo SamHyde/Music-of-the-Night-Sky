@@ -61,7 +61,14 @@ function update(){
 
 function draw(){
 
-// Draw a keyboard
+// Alexis' code
+
+  background(0);
+  for (var i=0; i<numStars; i++) {
+    tinyStars[i].show(); // display all the circles
+    tinyStars[i].move();
+  }
+
 
   // The width for each key
   var h = height / notes.length;
