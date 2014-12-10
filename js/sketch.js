@@ -17,6 +17,11 @@ var stars = [];
 var index = 0;
 var trigger = 0;
 var forward = true;
+
+var tinyStars = [],
+  numStars = 225;
+
+
 function setup(){
 //Create the canvas at window height and width
 	myCanvas = createCanvas(windowWidth, windowHeight);
@@ -33,9 +38,25 @@ function setup(){
   oscTwo.start();
   oscTwo.amp(0);
 
-// Creating a new Star object
+// Start Alexis' background star code
+
+  smooth();
+    noStroke();
+
+  for (var i=0; i<numStars; i++) {
+    tinyStars.push( new backStar("twinkle") ); // fill the array with circles at random positions
+  }
+
+  for( var i=0; i<tinyStars.length; i++ ){
+        tinyStars[i] = new backStar( random( width ), random( height ), 0 );
+      //tinyStars[i].vel.set( 0, 0, 0);
+    } 
 
 }
+
+function update(){
+    mouseAttract(); // change acc to make particles accelerate toward the mouse
+}  
 
 
 function draw(){
