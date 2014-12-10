@@ -93,7 +93,7 @@ function draw(){
   }
 
   ellipse(mouseX, mouseY, 35, 32);
-  fill(6, 0);
+  fill(255);
 
   // Display stars
   //for every star in array once clicked mouse, display it
