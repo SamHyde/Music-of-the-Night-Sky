@@ -61,9 +61,12 @@ function update(){
 
 function draw(){
 
+clear()
+
 // Alexis' code
 
-  background(0);
+  stroke(255);
+  
   for (var i=0; i<numStars; i++) {
     tinyStars[i].show(); // display all the circles
     tinyStars[i].move();
@@ -107,6 +110,7 @@ function draw(){
   for(var i = 0; i < stars.length - 1; i++){
     line( stars[i].x, stars[i].y, stars[i+1].x, stars[i+1].y);
   }
+
 
   if (stars.length > 1 && millis() > trigger){
     print(index);
