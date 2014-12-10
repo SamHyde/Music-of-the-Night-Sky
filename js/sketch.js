@@ -75,21 +75,21 @@ function draw(){
   for (var i = 0; i < notes.length; i++) {
     var y = i * h;
     
-    // If the mouse is over the key
-    if (mouseY> y && mouseY < y + h && mouseX< width) {
-      // If ye're clicking
-      if (mouseIsPressed) {
-        fill(100,255,200);
-      // Or just rolling over
-      } else {
-        fill(127);
-      }
-    } else {
-      fill(200);
-    }
+  //   // If the mouse is over the key
+  //   if (mouseY> y && mouseY < y + h && mouseX< width) {
+  //     // If ye're clicking
+  //     if (mouseIsPressed) {
+  //       fill(100,255,200);
+  //     // Or just rolling over
+  //     } else {
+  //       fill(127);
+  //     }
+  //   } else {
+  //     fill(200);
+  //   }
     
-    // Dray the key
-    rect(0, y, width, height); 
+  //   // Dray the key
+  //   rect(0, y, width, height); 
   }
 
   ellipse(mouseX, mouseY, 35, 32);
