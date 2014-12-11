@@ -27,10 +27,8 @@ var clickaction;
 function setup(){
 //Create the canvas at window height and width
 	myCanvas = createCanvas(windowWidth, windowHeight);
-
   //Hide the Cursor
   noCursor();
-
 //Call expand
 clickaction =  new Expand();
 
@@ -58,6 +56,7 @@ clickaction =  new Expand();
         tinyStars[i] = new backStar( random( width ), random( height ), 0 );
       //tinyStars[i].vel.set( 0, 0, 0);
     } 
+
 
 }
 
