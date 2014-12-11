@@ -68,7 +68,6 @@ function update(){
 
 function draw(){
 
-<<<<<<< Updated upstream
 clear()
 
 // Alexis' code
@@ -81,11 +80,9 @@ clear()
   }
 
   stroke(255);
-
-=======
 // Draw a keyboard
-  ellipse(200, 200, 200, 200);
->>>>>>> Stashed changes
+
+
   // The width for each key
   var h = height / notes.length;
   for (var i = 0; i < notes.length; i++) {
@@ -189,14 +186,9 @@ function mouseReleased() {
 	// When resized it calls the anonymous function
 	window.onresize = function(){
 	myCanvas.size(windowWidth, windowHeight);
-<<<<<<< Updated upstream
+
 }
-=======
-	}
-
-//Create an array of dots here for the constellations
 
 
->>>>>>> Stashed changes
 
 
