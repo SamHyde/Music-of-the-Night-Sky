@@ -127,7 +127,7 @@ clear()
     // Fade it in
     osc.fade(1,0);
 
-    oscTwo.freq(midiToFreq(stars[index].note) / 100);
+    oscTwo.freq(midiToFreq(stars[index].note) / 5);
     oscTwo.fade(1,0);
     
     trigger = millis() + stars[index].duration;
