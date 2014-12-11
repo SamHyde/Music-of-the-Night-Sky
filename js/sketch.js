@@ -40,7 +40,7 @@ clickaction =  new Expand();
   osc.start();
   osc.amp(0);  
 
-  oscTwo = new p5.SqrOsc();
+  oscTwo = new p5.SinOsc();
   // Start silent
   oscTwo.start();
   oscTwo.amp(0);
@@ -164,7 +164,7 @@ function mousePressed() {
 
   //Pushing stars into array
   //
-  stars.push(new Star( mouseX, mouseY, 10, notes[key], random(200, 1000))); 
+  stars.push(new Star( mouseX, mouseY, 10, notes[key], 200)); 
 
 
   //Calling Expand
