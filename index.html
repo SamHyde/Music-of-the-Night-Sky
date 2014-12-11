@@ -6,10 +6,15 @@
 		body{padding: 0; margin:0; overflow: hidden;}
 		canvas{ padding: 0; background: url(img/Starfield_Background.jpg) no-repeat; background-size: cover;}
 		.mountains {
+			background: url(img/Mountains.svg) no-repeat; 
+			background-size: cover;
 			position: fixed;
 			z-index: 9999;
 			bottom: 0;
-		}
+			height: 300px;
+			width: 100%;
+
+			}
 
 	</style>
 
@@ -25,7 +30,7 @@
 	<script type="text/javascript" src="js/backgroundstar.js"></script>
 	<script type="text/javascript" src="js/sketch.js"></script>
 
-	<img class="mountains" src="img/Mountains.svg">
+	<div class= "mountains"></div>
 	
 </body>
 </html>
