@@ -21,11 +21,18 @@ var forward = true;
 var tinyStars = [],
   numStars = 225;
 
+var clickaction;
+
 
 function setup(){
 //Create the canvas at window height and width
 	myCanvas = createCanvas(windowWidth, windowHeight);
 
+  //Hide the Cursor
+  noCursor();
+
+//Call expand
+clickaction =  new Expand();
 
 // A triangle oscillator
   osc = new p5.SinOsc();
@@ -101,7 +108,7 @@ clear()
   //   rect(0, y, width, height); 
   }
 
-  ellipse(mouseX, mouseY, 35, 32);
+  ellipse(mouseX, mouseY, 10, 10);
   fill(255);
 
   // Display stars
@@ -141,11 +148,17 @@ clear()
       }
   }
 
+  //Update the expand function
+  clickaction.update();
+  clickaction.display();
 
-
+  
 
 
 }
+
+
+
 // When we click
 function mousePressed() {
   // Map mouse to the key index
@@ -157,11 +170,17 @@ function mousePressed() {
   stars.push(new Star( mouseX, mouseY, 10, notes[key], random(200, 1000))); 
 
 
+  //Calling Expand
+  clickaction.animate();
+
+
+
 }
 
 // Fade it out when we release
 function mouseReleased() {
   osc.fade(0,0.5);
+
 }
 
 
@@ -179,6 +198,5 @@ function mouseReleased() {
 
 
 >>>>>>> Stashed changes
-
 
 
