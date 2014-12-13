@@ -43,6 +43,14 @@ clickaction =  new Expand();
   oscTwo.start();
   oscTwo.amp(0);
 
+//create a reverb for sound
+  reverb = new p5.Reverb();
+
+//connect reverb to sound
+reverb.process(osc, 26, 0.2);
+
+
+
 // Start Alexis' background star code
 
   smooth();
@@ -112,6 +120,10 @@ clear()
   for(var i=0; i<stars.length; i++){
     stars[i].display();
 
+    if(stars[i].isDead()){
+      print(true);
+    }
+
     //calling a method
     // stars[i].play();
   }
@@ -124,10 +136,10 @@ clear()
     print(index);
     osc.freq(midiToFreq(stars[index].note));
     // Fade it in
-    osc.fade(1,0);
+    osc.fade(.5,0);
 
-    oscTwo.freq(midiToFreq(stars[index].note) / 5);
-    oscTwo.fade(1,0);
+    oscTwo.freq(midiToFreq(stars[index].note) /5);
+    oscTwo.fade(.5,0);
     
     trigger = millis() + stars[index].duration;
 
@@ -148,7 +160,7 @@ clear()
   clickaction.update();
   clickaction.display();
 
-  
+
 
 
 }
@@ -161,9 +173,10 @@ function mousePressed() {
   var key = floor(map(mouseY, 0, height, 0, notes.length));
 
 
+
   //Pushing stars into array
   //
-  stars.push(new Star( mouseX, mouseY, 10, notes[key], 200)); 
+  stars.push(new Star( mouseX, mouseY, 10, notes[key], 200, millis())); 
 
 
   //Calling Expand

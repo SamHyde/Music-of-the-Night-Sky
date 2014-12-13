@@ -3,12 +3,13 @@
 
 
 //Creating Star Object
-function Star(passX, passY, passD, passNote, passDuration){
+function Star(passX, passY, passD, passNote, passDuration,passStartTime){
 	this.x = passX;
 	this.y = passY;
 	this.diameter = passD;
 	this.note = passNote;
 	this.duration = passDuration;
+	this.StartTime = passStartTime;
 	// this.display = function() {
 	// 	ellipse(this.x, this.y, this.diameter, this.diameter);
 	// };
@@ -32,6 +33,13 @@ Star.prototype.animate = function(){
 	// where we;ll call tween
 }
 
+Star.prototype.isDead = function(){
+	return (this.starTime + this.duration) > millis(); 
+
+
+	}
+
+
 // A function to play a note
 // function playNote(note, duration) {
 // 	osc.freq(midiToFreq(note));
@@ -40,3 +48,4 @@ Star.prototype.animate = function(){
   
 	
 // }
+
