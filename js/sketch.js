@@ -29,6 +29,7 @@ function setup(){
 	myCanvas = createCanvas(windowWidth, windowHeight);
   //Hide the Cursor
   noCursor();
+
 //Call expand
 clickaction =  new Expand();
 
