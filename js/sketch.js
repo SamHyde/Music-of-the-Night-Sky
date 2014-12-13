@@ -48,7 +48,7 @@ clickaction =  new Expand();
   reverb = new p5.Reverb();
 
 //connect reverb to sound
-reverb.process(osc, 26, 0.2);
+reverb.process(osc, 20, 0.2);
 
 
 
@@ -133,14 +133,14 @@ clear()
   }
 
 
-  if (stars.length > 1 && millis() > trigger){
+  if (stars.length > 0 && millis() > trigger){
     print(index);
     osc.freq(midiToFreq(stars[index].note));
     // Fade it in
-    osc.fade(.5,0);
+    osc.fade(.25,0);
 
-    oscTwo.freq(midiToFreq(stars[index].note) /5);
-    oscTwo.fade(.5,0);
+    oscTwo.freq(midiToFreq(stars[index].note) /12);
+    oscTwo.fade(.25,0);
     
     trigger = millis() + stars[index].duration;
 
