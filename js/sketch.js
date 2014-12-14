@@ -2,8 +2,8 @@
 //Scott Brookshire, Sam Evans, Ryan Jones, Emilee Serafine
 
 
-var notes = [ 60, 62, 64, 65, 67, 69, 71];
 
+var notes = [ 71, 69, 67, 65, 64, 62, 60];
 // var const = [];
 
 var index = 0;
@@ -87,33 +87,35 @@ clear()
     tinyStars[i].move();
   }
 
-  stroke(255);
-// Draw a keyboard
+  
 
+// Draw a keyboard
 
   // The width for each key
   var h = height / notes.length;
   for (var i = 0; i < notes.length; i++) {
     var y = i * h;
+    noFill();
+    // If the mouse is over the key
+    if (mouseY> y && mouseY < y + h && mouseX< width) {
+      // If ye're clicking
+      if (mouseIsPressed) {
+        stroke(155,255,255,20);
+      // Or just rolling over
+      } else {
+        stroke(155,255,255,20);
+      }
+    } else {
+      stroke(255,255,255,20);
+    }
     
-  //   // If the mouse is over the key
-  //   if (mouseY> y && mouseY < y + h && mouseX< width) {
-  //     // If ye're clicking
-  //     if (mouseIsPressed) {
-  //       fill(100,255,200);
-  //     // Or just rolling over
-  //     } else {
-  //       fill(127);
-  //     }
-  //   } else {
-  //     fill(200);
-  //   }
     
-  //   // Dray the key
-  //   rect(0, y, width, height); 
+    // Dray the key
+    rect(0, y, width+50, height); 
   }
 
   ellipse(mouseX, mouseY, 10, 10);
+  stroke(255);
   fill(255);
 
   // Display stars
