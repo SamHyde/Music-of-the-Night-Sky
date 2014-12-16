@@ -38,6 +38,38 @@ h3{
 	margin-top: 25px;
 	cursor: pointer;
 }
+h2{
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0px;
+    cursor: pointer;
+}
+h4{
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+h5{
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.nolink{
+    cursor:default;
+}
+.back{
+    cursor: pointer;
+}
 
 .splash-page{
     text-align: center;
@@ -45,6 +77,14 @@ h3{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.cont-page{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+
 
 }
 

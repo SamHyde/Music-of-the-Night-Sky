@@ -22,6 +22,7 @@
 			$("h1").addClass("animatedout fadeOutLeft");
 			$("button").addClass("hidden");
 			$(".contributers").addClass("animatedout fadeOutLeft");
+			$(".cont-page").removeClass("hidden");
 		});
 
 		$("button").click(function(){
@@ -30,8 +31,15 @@
 			$(".contributers").addClass("animatedout fadeOutLeft");
 
 			$.getScript("js/clicks.js");
+		});
 
-
+		$(".back").click(function(){
+			$(".cont-page").addClass("hidden");
+			$("h1").removeClass("animated fadeInUp animatedout fadeOutLeft");
+			$("h1").addClass("animated fadeInUp");
+			$("button").removeClass("hidden");
+			$(".contributers").removeClass("animated fadeInUp animatedout fadeOutLeft");
+			$(".contributers").addClass("animated fadeInUp");
 		});
 
 
@@ -63,9 +71,28 @@
 
 			<h1 id="title" class="animated fadeInUp" >Stella</h1>
 
+
 			<button class="animated fadeInUp"> Begin </button>
 
 			<h3 class="animated fadeInUp contributers">Contributers</h3>
+
+	</div>	
+	<div class="cont-page hidden">
+
+			<h2 class="nolink">Created By:</h2>
+
+			<h5 class="back">Scott Brookshire</h5>
+			<h5>Sam Evans</h5>
+			<h5>Ryan Jones</h5>
+			<h5>Emilee Serafine</h5>
+
+			<h2 class="nolink">With Contributions by:</h2>
+			<h5>Ryan Berkey</h5>
+			<h5>Alexis Britt</h5>
+			<h4 class="back">Back</h4>
+
+
+
 
 	</div>	
 		<div class="mountains"></div>
