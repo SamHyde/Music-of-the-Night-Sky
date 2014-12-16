@@ -28,9 +28,11 @@
 		$("button").click(function(){
 			$("h1").addClass("animatedout fadeOutLeft");
 			$("button").addClass("hidden");
-			$(".contributers").addClass("animatedout fadeOutLeft");
+			$(".contributers").addClass("hidden");
+			
 
 			$.getScript("js/clicks.js");
+
 		});
 
 		$(".back").click(function(){
