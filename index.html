@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<style>
-		body{padding: 0; margin:0; overflow: hidden;}
-		canvas{ padding: 0; background: url(img/Starfield_Background.jpg) no-repeat; background-size: cover;}
-		.mountains {
-			background: url(img/Mountains_2.png) no-repeat; 
-			background-size: cover;
-			position: fixed;
-			z-index: 9999;
-			width: 100%;
-			bottom: 0;
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//use.typekit.net/qsq5fsu.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript">
+
+	var h = $(window).height();
+
+	$(document).ready(function(){
+
+		splashsize();
+
 		
 
-			}
+		function splashsize(){
+			$('.splash-page').css('min-height',h)
+		};
 
-	</style>
+		$(".contributers").click(function(){
+			$("h1").addClass("animatedout fadeOutLeft");
+			$("button").addClass("hidden");
+			$(".contributers").addClass("animatedout fadeOutLeft");
+		});
 
+		$("button").click(function(){
+			$("h1").addClass("animatedout fadeOutLeft");
+			$("button").addClass("hidden");
+			$(".contributers").addClass("animatedout fadeOutLeft");
+
+			$.getScript("js/clicks.js");
+
+
+		});
+
+
+	}); // End of Document Ready
+	</script>
+
+
+
+	<link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
 <body>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.10/p5.min.js"></script>
@@ -28,6 +51,7 @@
 	<script type="text/javascript" src="js/star.js"></script>
 	<script type="text/javascript" src="js/click.js"></script>
 	<script type="text/javascript" src="js/backgroundstar.js"></script>
+	
 	<script type="text/javascript" src="js/sketch.js"></script>
 
 
@@ -35,6 +59,15 @@
 
 	<img class="mountains" src="img/Mountains_2.png">
 
-	
+	<div class="splash-page">
+
+			<h1 id="title" class="animated fadeInUp" >Stella</h1>
+
+			<button class="animated fadeInUp"> Begin </button>
+
+			<h3 class="animated fadeInUp contributers">Contributers</h3>
+
+	</div>	
+		<div class="mountains"></div>
 </body>
 </html>

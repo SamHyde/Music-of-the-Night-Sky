@@ -27,3 +27,4 @@ Expand.prototype.display = function(){
 	strokeWeight( this.strokeWeight );
 	ellipse( mouseX, mouseY, this.tween, this.tween );
 }
+

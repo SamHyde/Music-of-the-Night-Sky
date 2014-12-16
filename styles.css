@@ -1,0 +1,184 @@
+.back{
+	padding: 0; 
+	margin:0; 
+	overflow: hidden;
+	padding: 0; 
+	z-index: -500;
+    width: 100%
+}
+body{
+	padding: 0; 
+	margin:0; 
+	overflow: hidden;
+	padding: 0; 
+	background:  
+	no-repeat;
+    background: 
+    url(img/Starfield_Background.jpg) 
+    no-repeat; 
+    background-size: cover;
+
+}
+h1{
+	padding-top: 50px;
+	margin-bottom: 20px;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	font-size: 200px;
+	line-height: 200px;
+}
+h3{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: white;
+	font-size: 15px;
+	margin-top: 25px;
+	cursor: pointer;
+}
+
+.splash-page{
+    text-align: center;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mountains {
+	position: fixed;
+	z-index: 9999;
+	bottom: 0;
+	height: 300px;
+	width: 100%;
+}
+
+button {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: white;
+	background-color:rgba(0,0,0,0);
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:18px 51px;
+	text-decoration:none;
+}
+button:hover {
+	background-color:rgba(255,255,255,.2);
+	-webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+.hidden{
+	visibility: hidden;
+}
+
+.animated { 
+    -webkit-animation-duration: 1.8s; 
+    animation-duration: 1.8s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+
+.animatedout{ 
+    -webkit-animation-duration: .5s; 
+    animation-duration: .5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out; 
+} 
+
+.fadeOutLeft { 
+    -webkit-animation-name: fadeOutLeft; 
+    animation-name: fadeOutLeft; 
+}
+.animatedin { 
+    -webkit-animation-duration: .5s; 
+    animation-duration: .5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out; 
+} 
+.fadeInRight { 
+    -webkit-animation-name: fadeInRight; 
+    animation-name: fadeInRight; 
+}
+@-webkit-keyframes fadeInRight { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+@keyframes fadeInRight { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+@-webkit-keyframes fadeOutLeft { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+    100% { 
+        opacity: 0; 
+        -webkit-transform: translateX(-20px); 
+    } 
+} 
+@keyframes fadeOutLeft { 
+    0% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+    100% { 
+        opacity: 0; 
+        transform: translateX(-20px); 
+    } 
+} 
+
+
+
+@-webkit-keyframes fadeIn { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
