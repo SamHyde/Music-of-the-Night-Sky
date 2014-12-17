@@ -1,7 +1,7 @@
 function ShootingStars( position, velocity ){
 	this.position = position;
 	this.velocity = velocity.normalize();
-	this.velocity.mult(random(7, 40));
+	this.velocity.mult(random(20, 60));
 }
 
 ShootingStars.prototype.show = function(){

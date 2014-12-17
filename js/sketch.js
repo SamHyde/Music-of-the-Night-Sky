@@ -25,7 +25,7 @@ var clickaction;
 
 var shootingStars = [];
 var pervSecond = 0;
-var perSecond = 600;
+var perSecond = -60000000000000000;
 
 
 function setup(){
@@ -190,8 +190,8 @@ clear()
 //shooting star
 
 function getRandomXY(){
-  var x = random(-width * 3, width * 5);
-  var y = random(-height/5 * 3, height/2);
+  var x = random(-width * 20, width * 25);
+  var y = random(-height/5 * 3, height);
   return createVector(x,y);
 }
 
