@@ -199,7 +199,7 @@ function getRandomXY(){
 	
 	// Window event handler when the browser window size changes
 	// When resized it calls the anonymous function
-	window.onresize = function(){
+	window.onResize = function(){
 	myCanvas.size(windowWidth, windowHeight);
 
 }
