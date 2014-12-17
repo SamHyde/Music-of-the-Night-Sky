@@ -1,7 +1,7 @@
 function ShootingStars( position, velocity ){
 	this.position = position;
 	this.velocity = velocity.normalize();
-	this.velocity.mult(random(10, 40));
+	this.velocity.mult(random(7, 40));
 }
 
 ShootingStars.prototype.show = function(){
@@ -20,6 +20,6 @@ ShootingStars.prototype.isDead = function(){
 	// 	return false;
 	// }
 
-	return (this.position.x < 0 || this.position.x > width) && (this.position.y < 0 || this.position.y > height/10000000)
+	return (this.position.x < 0 || this.position.x > width) && (this.position.y < 0 || this.position.y > height/3000000)
 
 }
