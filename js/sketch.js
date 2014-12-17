@@ -23,6 +23,10 @@ var tinyStars = [],
 
 var clickaction;
 
+var shootingStars = [];
+var pervSecond = 0;
+var perSecond = 600;
+
 
 function setup(){
 //Create the canvas at window height and width
@@ -163,12 +167,33 @@ clear()
   clickaction.update();
   clickaction.display();
 
+  //shooting star code
 
+  for( var i = 0; i < shootingStars.length; i++){ // loop through shootingStars[]
+
+    shootingStars[i].show();
+    shootingStars[i].update();
+    if (shootingStars[i].isDead()){
+      shootingStars.splice(i, 1);
+    }
+  }
+
+  var seconds = millis() / 100 ;
+  if( seconds > pervSecond ){
+    shootingStars.push( new ShootingStars( getRandomXY(), getRandomXY() ));
+    prevSecond = seconds - perSecond;
+  }
 
 
 }
 
+//shooting star
 
+function getRandomXY(){
+  var x = random(-width * 3, width * 5);
+  var y = random(-height/5 * 3, height/2);
+  return createVector(x,y);
+}
 
 
 	
