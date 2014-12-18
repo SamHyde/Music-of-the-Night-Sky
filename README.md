@@ -1,5 +1,5 @@
-Dependencies
-=========
+##Dependencies
+
 p5.dom.js<br>
 p5.gibber.min.js<br>
 p5.sound.js<br>
