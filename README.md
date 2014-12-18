@@ -1,6 +1,6 @@
 Dependencies
 =========
-p5.dom.js
+p5.dom.js<br>
 p5.gibber.min.js
 p5.sound.js
 dat.gui.js
