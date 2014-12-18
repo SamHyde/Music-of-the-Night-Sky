@@ -11,8 +11,7 @@ function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDu
 	this.duration = passDuration;
 	this.startTime = passStartTime;
 	this.starDuration = starDuration;
-<<<<<<< HEAD
-=======
+
 	// this.display = function() {
 	// 	ellipse(this.x, this.y, this.diameter, this.diameter);
 	// };
@@ -21,7 +20,7 @@ function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDu
 		this.xPos = random(windowWidth);
 	    this.yPos = random(windowHeight);
     	this.attract = false;
->>>>>>> FETCH_HEAD
+
 }
 
 Star.prototype.display = function(){
