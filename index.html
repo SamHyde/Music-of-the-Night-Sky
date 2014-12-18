@@ -20,14 +20,14 @@
 
 		$(".contributers").click(function(){
 			$("h1").addClass("animatedout fadeOutLeft");
-			$("button").addClass("hidden");
+			$(".button").addClass("hidden");
 			$(".contributers").addClass("animatedout fadeOutLeft");
 			$(".cont-page").removeClass("hidden");
 		});
 
-		$("button").click(function(){
+		$(".button").click(function(){
 			$("h1").addClass("animatedout fadeOutLeft");
-			$("button").addClass("hidden");
+			$(".button").addClass("hidden");
 			$(".contributers").addClass("hidden");
 			
 
@@ -39,7 +39,7 @@
 			$(".cont-page").addClass("hidden");
 			$("h1").removeClass("animated fadeInUp animatedout fadeOutLeft");
 			$("h1").addClass("animated fadeInUp");
-			$("button").removeClass("hidden");
+			$(".button").removeClass("hidden");
 			$(".contributers").removeClass("animated fadeInUp animatedout fadeOutLeft");
 			$(".contributers").addClass("animated fadeInUp");
 		});
@@ -66,9 +66,7 @@
 	
 	<script type="text/javascript" src="js/sketch.js"></script>
 
-
-
-
+<img class="mountains" src="img/mountains.png">
 
 
 	<div class="splash-page">
@@ -76,7 +74,7 @@
 			<h1 id="title" class="animated fadeInUp" >Steller</h1>
 
 
-			<button class="animated fadeInUp"> Begin </button>
+			<div class="animated fadeInUp button"> Begin </div>
 
 			<h3 class="animated fadeInUp contributers">Contributers</h3>
 

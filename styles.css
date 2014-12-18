@@ -1,3 +1,4 @@
+
 .back{
 	padding: 0; 
 	margin:0; 
@@ -14,7 +15,7 @@ body{
 	background:  
 	no-repeat;
     background: 
-    url(img/Starfield_Background.jpg) 
+    url(img/Starfield_Background.jpg)
     no-repeat; 
     background-size: cover;
 
@@ -90,13 +91,12 @@ h5{
 
 .mountains {
 	position: fixed;
-	z-index: 9999;
 	bottom: 0;
-	height: 300px;
-	width: 100%;
+    width: 100%;
+    
 }
 
-button {
+.button {
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -107,10 +107,13 @@ button {
 	cursor:pointer;
 	color:#ffffff;
 	font-size:17px;
-	padding:18px 51px;
+	padding:18px 18px;
 	text-decoration:none;
+    width:100px;
+    z-index: 20;
+
 }
-button:hover {
+.button:hover {
 	background-color:rgba(255,255,255,.2);
 	-webkit-animation-name: fadeIn; 
     animation-name: fadeIn; 
