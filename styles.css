@@ -65,6 +65,17 @@ h5{
     margin-top: 25px;
     cursor: pointer;
 }
+
+p {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+    margin-top: 20%;
+    text-align: center;
+}
+
 .nolink{
     cursor:default;
 }

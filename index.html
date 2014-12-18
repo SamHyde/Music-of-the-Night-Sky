@@ -31,6 +31,8 @@
 
 		$(".button").click(function(){
 			$("h1").addClass("animatedout fadeOutLeft");
+			$("p").removeClass("hidden");
+			$("p").addClass("animated fadeInUp");
 			$(".button").addClass("hidden");
 			$(".contributers").addClass("hidden");
 			
@@ -97,11 +99,11 @@
 			<a href="http://http://rybotron.com/" target="_blank" ><h5>Ryan Berkey</h5></a>
 			<a href="http://alexisbritt.com" target="_blank" ><h5>Alexis Britt</h5></a>
 			<h4 class="back">Back</h4>
-
-
-
-
 	</div>	
+
+	<div class="cont-intro hidden">
+			<p>Begin clicking around the screen to create your own constellation and song.</p>
+	</div>
 
 </body>
 </html>
