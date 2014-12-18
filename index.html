@@ -21,7 +21,9 @@
 
 		$(".contributers").click(function(){
 			$("h1").addClass("animatedout fadeOutLeft");
-			$(".button").addClass("hidden");
+			$(".button").removeClass("animatedout fadeOutLeft");
+			$(".button").addClass("animatedout fadeOutLeft");
+			setTimeout($(".button").addClass("hidden"), 1000);
 			$(".contributers").addClass("animatedout fadeOutLeft");
 			$(".cont-page").removeClass("hidden");
 		});
@@ -40,6 +42,7 @@
 			$(".cont-page").addClass("hidden");
 			$("h1").removeClass("animated fadeInUp animatedout fadeOutLeft");
 			$("h1").addClass("animated fadeInUp");
+			$(".button").removeClass("animatedout fadeOutLeft");
 			$(".button").removeClass("hidden");
 			$(".contributers").removeClass("animated fadeInUp animatedout fadeOutLeft");
 			$(".contributers").addClass("animated fadeInUp");
