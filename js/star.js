@@ -16,7 +16,6 @@ function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDu
 	// };
 
 		// CONSTELLATION PARALAX 
-	    this.type = type;
     	this.attract = false;
     	this.xSpeed = random(0, .01);
     	this.ySpeed = random(0, .01);
