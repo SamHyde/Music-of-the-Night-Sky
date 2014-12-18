@@ -1,9 +1,9 @@
 //WNM 498 Generative Art & Creative Code
 //Scott Brookshire, Sam Evans, Ryan Jones, Emilee Serafine
 
+var notes = [ 80, 75, 71, 68, 66, 63, 59, 56];
 
-
-var notes = [ 71, 69, 67, 65, 64, 62, 60];
+// OLD var notes = [ 71, 69, 67, 65, 64, 62, 60];
 // var const = [];
 
 var index = 0;
@@ -118,7 +118,7 @@ clear()
     rect(0, y, width+50, height); 
   }
 
-  ellipse(mouseX, mouseY, 10, 10);
+  ellipse(mouseX, mouseY, 50, 50);
   stroke(255);
   fill(255);
 
@@ -127,15 +127,16 @@ clear()
   for(var i=0; i<stars.length; i++){
     stars[i].display();
 
-      
+          if(stars[i].isDead()){
+        stars.splice( i , 1);
+      }
 
     //calling a method
     // stars[i].play();
   }
-
-
   for(var i = 0; i < stars.length - 1; i++){
     line( stars[i].x, stars[i].y, stars[i+1].x, stars[i+1].y);
+
   }
 
 

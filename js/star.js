@@ -9,11 +9,8 @@ function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDu
 	this.diameter = passD;
 	this.note = passNote;
 	this.duration = passDuration;
-	this.StartTime = passStartTime;
+	this.startTime = passStartTime;
 	this.starDuration = starDuration;
-	// this.display = function() {
-	// 	ellipse(this.x, this.y, this.diameter, this.diameter);
-	// };
 }
 
 Star.prototype.display = function(){
@@ -36,7 +33,6 @@ Star.prototype.animate = function(){
 Star.prototype.isDead = function(){
 	return (this.startTime + this.starDuration) < millis();
 }
-
 
 // A function to play a note
 // function playNote(note, duration) {
