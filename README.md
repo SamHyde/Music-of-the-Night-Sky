@@ -7,9 +7,8 @@
 
 ##Generative Art Final Project Prompt
 
-Final project for Generative Art<br>
+Final project for [Generative Art](https://github.com/rybotron/wnm498genart_f14)<br>
 Instructor: [Ryan Berkey](http://rybotron.com/)<br>
-[Class Repo](https://github.com/rybotron/wnm498genart_f14)
 
 Completion
 
