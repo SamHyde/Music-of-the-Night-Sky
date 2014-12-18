@@ -127,13 +127,13 @@ clear()
   for(var i=0; i<stars.length; i++){
     stars[i].display();
 
-    if(stars[i].isDead()){
-      print(true);
-    }
+      
 
     //calling a method
     // stars[i].play();
   }
+
+
   for(var i = 0; i < stars.length - 1; i++){
     line( stars[i].x, stars[i].y, stars[i+1].x, stars[i+1].y);
   }

@@ -7,7 +7,7 @@ function mousePressed() {
 
   //Pushing stars into array
   //
-  stars.push(new Star( mouseX, mouseY, 10, notes[key], 200, millis())); 
+  stars.push(new Star( mouseX, mouseY, 10, notes[key], 200, millis(), 5000 )); 
 
 
   //Calling Expand

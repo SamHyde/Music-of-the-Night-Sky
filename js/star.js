@@ -3,17 +3,17 @@
 
 
 //Creating Star Object
-function Star(passX, passY, passD, passNote, passDuration,passStartTime){
+function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDuration){
 	this.x = passX;
 	this.y = passY;
 	this.diameter = passD;
 	this.note = passNote;
 	this.duration = passDuration;
 	this.StartTime = passStartTime;
+	this.starDuration = starDuration;
 	// this.display = function() {
 	// 	ellipse(this.x, this.y, this.diameter, this.diameter);
 	// };
-	
 }
 
 Star.prototype.display = function(){
@@ -34,10 +34,8 @@ Star.prototype.animate = function(){
 }
 
 Star.prototype.isDead = function(){
-	return (this.starTime + this.duration) > millis(); 
-
-
-	}
+	return (this.startTime + this.starDuration) < millis();
+}
 
 
 // A function to play a note
