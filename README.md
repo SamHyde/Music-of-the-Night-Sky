@@ -7,8 +7,8 @@ dat.gui.js<br>
 paper-full.js<br>
 tween.min.js
 
-Generative Art Final Project Prompt
-=========
+##Generative Art Final Project Prompt
+
 Final project for Generative Art<br>
 Instructor: Ryan Berkey<br>
 Class Repo: https://github.com/rybotron/wnm498genart_f14<br>
@@ -31,8 +31,7 @@ Completion is...
 The end of a day, month, year, or a decade. It's the end of a lecture, a homework assignment, a final project. It is a state of being complete. However, it is not just an ending, it can also bring new beginnings. For example, when you graduate you will be beginning a new chapter in your life, after a full moon it begins to wane, or when you finish eating a sandwich, you're full. Completion brings change.
 
 
-Our final project: Music of the Night Sky
-=========
+##Our final project: Music of the Night Sky
 
 The Concept: As we gaze into the night sky we often find ourselves connecting the points of light. We take these connections and usually turn them into pictorial representations of mythic animals or people. But what if there was another way which we could experience the patterns of stars. With this project we will transform a nights sky into a musical instrument allowing us to create the songs of the cosmos.      
 
