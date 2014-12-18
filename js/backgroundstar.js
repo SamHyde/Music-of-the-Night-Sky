@@ -10,11 +10,13 @@ function backStar( type ) {
 } 
 backStar.prototype.show = function(){
   noStroke();
-  fill( this.color, this.color[3]);
+  fill( 255);
   ellipse( this.xPos, this.yPos, this.size, this.size);
 }
 
 backStar.prototype.move = function(){
+
+  
 
   var horizon = (mouseX - width/2) / 2000 ;
   var vertical = (mouseY - height/2) / 2000;

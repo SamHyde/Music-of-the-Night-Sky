@@ -87,7 +87,7 @@ function update(){
 
 function draw(){
 
-clear()
+clear();
 
 // Alexis' code
 
@@ -149,7 +149,10 @@ clear()
 
 
   if (stars.length > 0 && millis() > trigger){
-    print(index);
+    if(!osc.started){
+      osc.start();
+      oscTwo.start();
+}
     osc.freq(midiToFreq(stars[index].note));
     // Fade it in
     osc.fade(.25,0);
@@ -170,6 +173,12 @@ clear()
       } else{
         index--;
       }
+  }else if(
+
+    stars.length===0){
+
+    osc.stop()
+    oscTwo.stop()
   }
 
   //Update the expand function
@@ -208,8 +217,9 @@ function getRandomXY(){
 	
 	// Window event handler when the browser window size changes
 	// When resized it calls the anonymous function
-	window.onResize = function(){
-	myCanvas.size(windowWidth, windowHeight);
+window.onresize = function(){
+	myCanvas.resize(windowWidth, windowHeight);
+  print(myCanvas);
 
 }
 
