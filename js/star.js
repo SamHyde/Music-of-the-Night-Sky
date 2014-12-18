@@ -3,7 +3,7 @@
 
 
 //Creating Star Object
-function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDuration){
+function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDuration, type){
 	this.x = passX;
 	this.y = passY;
 	this.diameter = passD;
@@ -16,8 +16,8 @@ function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDu
 	// };
 
 		// CONSTELLATION PARALAX 
-		this.xPos = random(windowWidth);
-	    this.yPos = random(windowHeight);
+		this.xPos = mouseX;
+	    this.yPos = mouseY;
 	    this.type = type;
     	this.attract = false;
 }
