@@ -10,7 +10,7 @@ tween.min.js
 ##Generative Art Final Project Prompt
 
 Final project for Generative Art<br>
-Instructor: Ryan Berkey<br>
+Instructor: [Ryan Berkey](http://rybotron.com/)<br>
 [Class Repo](https://github.com/rybotron/wnm498genart_f14)
 
 Completion
