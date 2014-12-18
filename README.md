@@ -5,6 +5,10 @@
 [p5.sound.js](http://p5js.org/reference/#/libraries/p5.sound)<br>
 [dat.gui.js](http://code.google.com/p/dat-gui/)<br>
 
+##How to use
+
+Click around the screen to create your own constellation and song. 
+
 ##Generative Art Final Project Prompt
 
 Final project for [Generative Art](https://github.com/rybotron/wnm498genart_f14)<br>
@@ -34,6 +38,13 @@ The Concept: As we gaze into the night sky we often find ourselves connecting th
 
 The Details: A nights sky passes across the viewport. Within the sky are stars which call out with little rings around themselves. These stars can be connected to each other allowing for a melody to be created. The more stars that are connected the longer the melody becomes. The stars are constantly moving across the screen and once a star passes off the screen the note stops playing. 
 
-##How to use
+##Created by:
+[Scott Brookshire](http://scottbrookshiredesign.com/)<br>
+[Sam Evans](http://iamsamevans.com/)<br>
+[Ryan Jones](http://thatryanjones.com/index.html)<br>
+[Emilee Serafine](http://emileeserafine.com/)
 
-Click around the screen to create your own constellation and song. 
+##With contributions from:
+[Alexis Britt](http://alexisbritt.com/)<br>
+[Ryan Berkey](http://rybotron.com/)
+
