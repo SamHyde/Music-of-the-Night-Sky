@@ -1,10 +1,10 @@
 Dependencies
 =========
 p5.dom.js<br>
-p5.gibber.min.js
-p5.sound.js
-dat.gui.js
-paper-full.js
+p5.gibber.min.js<br>
+p5.sound.js<br>
+dat.gui.js<br>
+paper-full.js<br>
 tween.min.js
 
 Generative Art Final Project Prompt
