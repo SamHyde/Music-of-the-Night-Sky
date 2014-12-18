@@ -32,23 +32,23 @@ Star.prototype.display = function(){
 	  var horizon = (mouseX - width/2) / 2000 ;
 	  var vertical = (mouseY - height/2) / 2000;
 
-	  this.xPos += this.xSpeed + horizon;
-	  this.yPos += this.ySpeed + vertical;
+	  this.x += this.xSpeed + horizon;
+	  this.y += this.ySpeed + vertical;
 
-	  if ((this.xPos > width)){
-	    this.xPos = 0;
+	  if ((this.x > width)){
+	    this.x = 0;
 	  }
 
-	  if ((this.xPos < 0)){
-	    this.xPos = width;
+	  if ((this.x < 0)){
+	    this.x = width;
 	  }
 
-	  if ((this.yPos > height)){
-	    this.yPos = 0;
+	  if ((this.y > height)){
+	    this.y = 0;
 	  }
 
-	  if ((this.yPos < 0)){
-	    this.yPos = height;
+	  if ((this.y < 0)){
+	    this.y = height;
 	  }
 
 	}
