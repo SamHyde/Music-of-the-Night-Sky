@@ -27,6 +27,10 @@ var shootingStars = [];
 var pervSecond = 0;
 var perSecond = -60000000000000000;
 
+var gui;
+var gridCTRL = {
+  tempo: 200
+}
 
 function setup(){
 //Create the canvas at window height and width
@@ -34,6 +38,9 @@ function setup(){
   //Hide the Cursor
   noCursor();
 
+  //Dat gui
+  gui = new dat.GUI();
+  gui.add(gridCTRL, "tempo", 10, 500);
 //Call expand
 clickaction =  new Expand();
 
@@ -118,7 +125,7 @@ clear()
     rect(0, y, width+50, height); 
   }
 
-  ellipse(mouseX, mouseY, 50, 50);
+  ellipse(mouseX, mouseY, 20, 20);
   stroke(255);
   fill(255);
 
