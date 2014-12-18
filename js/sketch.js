@@ -40,7 +40,7 @@ function setup(){
 
   //Dat gui
   gui = new dat.GUI();
-  gui.add(gridCTRL, "tempo", 10, 500);
+  gui.add(gridCTRL, "tempo", 100, 900);
 //Call expand
 clickaction =  new Expand();
 

@@ -241,3 +241,28 @@ p {
         transform: translateY(0); 
     } 
 } 
+
+
+/*DAT GUI*/
+
+.dg{
+    color:#999;
+    font-family: "futura-pt",sans-serif;
+    font-size: 16px;
+}
+
+.dg.ac{
+    z-index:9999;
+}
+
+.dg .c .slider:hover .slider-fg{
+    background: #66394A;
+}
+
+.dg .c .slider .slider-fg{
+    background: #66394A;
+}
+
+body .dg .cr.number{
+border-color: 3px solid #66394A;
+}
