@@ -31,8 +31,7 @@
 
 		$(".button").click(function(){
 			$("h1").addClass("animatedout fadeOutLeft");
-			$(".cont-intro").removeClass("hidden");
-			// $("p").addClass("animated fadeInUp");
+			$(".cont-intro").removeClass("hidden").delay(2500).fadeOut('slow');
 			$(".button").addClass("hidden");
 			$(".contributers").addClass("hidden");
 			
