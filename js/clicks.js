@@ -7,7 +7,7 @@ function mousePressed() {
 
   //Pushing stars into array
   //
-  stars.push(new Star( mouseX, mouseY, 10, notes[key], gridCTRL.tempo , millis(), 10000 )); 
+  stars.push(new Star( mouseX, mouseY, 10, notes[key], gridCTRL.tempo , millis(), gridCTRL.lifeSpan )); 
 print(millis());
   //Calling Expand
   clickaction.animate();

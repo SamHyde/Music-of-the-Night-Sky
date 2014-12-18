@@ -29,7 +29,8 @@ var perSecond = -60000000000000000;
 
 var gui;
 var gridCTRL = {
-  tempo: 200
+  tempo: 200,
+  lifeSpan: 10000
 }
 
 function setup(){
@@ -41,6 +42,7 @@ function setup(){
   //Dat gui
   gui = new dat.GUI();
   gui.add(gridCTRL, "tempo", 100, 900);
+  gui.add(gridCTRL, "lifeSpan", 5000, 40000);
 //Call expand
 clickaction =  new Expand();
 

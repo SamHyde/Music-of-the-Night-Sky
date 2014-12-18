@@ -39,6 +39,9 @@
 			$.getScript("js/clicks.js");
 
 		});
+		$(".dg").mouseover(function(){
+			$("canvas").click(false);
+		});
 
 		$(".back").click(function(){
 			$(".cont-page").addClass("hidden");

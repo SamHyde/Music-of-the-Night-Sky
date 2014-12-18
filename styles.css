@@ -249,12 +249,15 @@ p {
     color:#999;
     font-family: "futura-pt",sans-serif;
     font-size: 16px;
+    z-index:9999;
 }
 
 .dg.ac{
     z-index:9999;
 }
-
+canvas{
+    z-index:-9999;
+}
 .dg .c .slider:hover .slider-fg{
     background: #66394A;
 }
@@ -265,4 +268,8 @@ p {
 
 body .dg .cr.number{
 border-color: 3px solid #66394A;
+}
+
+.dg .cr.number input[type=text]{
+    color:#8e4e66;
 }
