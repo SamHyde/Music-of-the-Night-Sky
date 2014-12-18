@@ -11,7 +11,8 @@ Generative Art Final Project Prompt
 =========
 Final project for Generative Art<br>
 Instructor: Ryan Berkey<br>
-Class Repo: https://github.com/rybotron/wnm498genart_f14
+Class Repo: https://github.com/rybotron/wnm498genart_f14<br>
+
 Completion
 
 /kəmˈplēSH(ə)n/
