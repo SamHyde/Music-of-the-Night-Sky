@@ -66,6 +66,10 @@ h5{
     cursor: pointer;
 }
 
+.cont-intro {
+    position: absolute;
+}
+
 p {
     font-family: "futura-pt",sans-serif;
     font-style: normal;
