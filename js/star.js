@@ -14,12 +14,45 @@ function Star(passX, passY, passD, passNote, passDuration, passStartTime, starDu
 	// this.display = function() {
 	// 	ellipse(this.x, this.y, this.diameter, this.diameter);
 	// };
+
+		// CONSTELLATION PARALAX 
+		this.xPos = random(windowWidth);
+	    this.yPos = random(windowHeight);
+	    this.type = type;
+    	this.attract = false;
 }
 
 Star.prototype.display = function(){
 
 	ellipse(this.x, this.y, this.diameter, this.diameter);
 }
+	
+	// CONSTELLATION PARALAX 
+	Star.prototype.move = function(){
+
+	  var horizon = (mouseX - width/2) / 2000 ;
+	  var vertical = (mouseY - height/2) / 2000;
+
+	  this.xPos += this.xSpeed + horizon;
+	  this.yPos += this.ySpeed + vertical;
+
+	  if ((this.xPos > width)){
+	    this.xPos = 0;
+	  }
+
+	  if ((this.xPos < 0)){
+	    this.xPos = width;
+	  }
+
+	  if ((this.yPos > height)){
+	    this.yPos = 0;
+	  }
+
+	  if ((this.yPos < 0)){
+	    this.yPos = height;
+	  }
+
+	}
 
 Star.prototype.play = function(){
 
@@ -46,4 +79,20 @@ Star.prototype.isDead = function(){
   
 	
 // }
+
+
+	// CONSTELLATION PARALAX 
+	Star.prototype.applyForce = function(force) {
+	  var f = p5.Vector.div(force,this.mass);
+	  this.acceleration.add(f);
+	};
+
+	Star.prototype.update = function() {
+	  // Velocity changes according to acceleration
+	  this.velocity.add(this.acceleration);
+	  // position changes by velocity
+	  this.position.add(this.velocity);
+	  // We must clear acceleration each frame
+	  this.acceleration.mult(0);
+	};
 
