@@ -11,7 +11,7 @@ tween.min.js
 
 Final project for Generative Art<br>
 Instructor: Ryan Berkey<br>
-Class Repo: https://github.com/rybotron/wnm498genart_f14<br>
+[Class Repo](https://github.com/rybotron/wnm498genart_f14)
 
 Completion
 
