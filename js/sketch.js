@@ -98,7 +98,7 @@ clear()
     tinyStars[i].move();
   }
 
-  
+
 
 // Draw a keyboard
 
@@ -133,6 +133,7 @@ clear()
   //for every star in array once clicked mouse, display it
   for(var i=0; i<stars.length; i++){
     stars[i].display();
+    stars[i].move();
 
           if(stars[i].isDead()){
         stars.splice( i , 1);
