@@ -1,11 +1,9 @@
 ##Dependencies
 
-p5.dom.js<br>
-p5.gibber.min.js<br>
-p5.sound.js<br>
-dat.gui.js<br>
-paper-full.js<br>
-tween.min.js
+[p5.dom.js](http://p5js.org/reference/#/libraries/p5.dom)<br>
+[p5.gibber.min.js](http://charlie-roberts.com/gibber/p5-gibber/)<br>
+[p5.sound.js](http://p5js.org/reference/#/libraries/p5.sound)<br>
+[dat.gui.js](http://code.google.com/p/dat-gui/)<br>
 
 ##Generative Art Final Project Prompt
 
